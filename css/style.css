@@ -1,12 +1,12 @@
 
-
+/*   SMALL SCREEN  */
 *{
 	margin:0;
 	padding:0;
 }
 html, body {
     height: 100%;
-    background: linear-gradient(90deg, #e2e2e2 5%, white 5%);
+
 }
 
 
@@ -39,6 +39,7 @@ h1 {
 
 .nav li {
     display: block;
+
 }
 .nav li a {
     display: block;
@@ -90,9 +91,9 @@ h1 {
 .bottom{
 	background: black;
 	position: relative;
-	height: 20%;
+	height: 10%;
 	width: 100%;
-	top: 50%;
+	top: 70%;
 	opacity: .55;
 }	
 footer {
@@ -151,40 +152,56 @@ footer {
 
 /*----------------------Accordion Menu-------------------*/
 .accordion{
-	top: 22%;
 	position: relative;
-	margin-bottom: 60%
+	top: 25%;
+	left: 16%;
+	text-align: center;
+	width: 70%;
 }
 
 .title {
 	padding: 5px;
 	background: #e2e2e2;
-	margin-bottom: 3px;
+	margin-bottom: 10px;
 	font-family: Lobster, LowCasatLight_PERSONAL_USE, Futura;
 	color: #333;
 	font-size: 1.5em;
 	text-align: center;
 }
 .title:hover{
-	background: #333;;
+	background: green;
 	color: white;
 }
 
 .content{
-	width: 95%;
-	display: none;
+	position: relative;
+	width: 130%;
+	right: 15%;
+/*	display: none;*/
 }	
 .container{
-	width: 25%;
+	width: 15%;
 	position: relative;	
-	left: 7%;
 	display: inline-block;
 	margin: 3%;
+}
+.container_stuff{
+	width: 100%;
+	position: relative;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	display: none;
+	font-size: .7em;
+	font-family:  "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, Futura-Medium, "Futura Medium",sans-serif;
+}	
+.container_stuff_images{
+	position: relative;
+	margin-top: 10%;
+
 }
 
 .screen_grab{
 	width: 100%;
-
 }
 
 .caption{
