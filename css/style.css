@@ -106,7 +106,7 @@ footer {
 	font-size: 11px;
 	width: 100%;
 	bottom: 0%;
-	text-align: center;
+	text-align: left;
 	opacity: .85;
 }
 
@@ -196,7 +196,6 @@ footer {
 }	
 .container_stuff_images{
 	position: relative;
-	margin-top: 10%;
 
 }
 

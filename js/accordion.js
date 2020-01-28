@@ -21,18 +21,19 @@ $title.on('mouseout', function(){
 
 
 // expands titles to show containers
+$contents.slideUp();
 $title.on('click', function(){
 	
 	var $currentTitle = $(this);
-	var $currentContent = $currentTitle.next();
+	var $currentTitleContent = $currentTitle.next();
 
 	$contents.slideUp();
 	$title.css("background", "#e2e2e2");
 	$title.css("color", "#333");
 	$container_stuff.slideUp()
-	if(!$currentContent.is(":visible"))
+	if(!$currentTitleContent.is(":visible"))
 		{
-			$currentContent.slideDown();
+			$currentTitleContent.slideDown();
 			$currentTitle.css("background", "#333");
 			$currentTitle.css("color", "white");
 		}
