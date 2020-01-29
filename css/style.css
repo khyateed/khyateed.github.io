@@ -90,6 +90,12 @@ h1 {
 
 .bottom{
 	background: black;
+	color: white;
+	font-family: Oswald, Futura, Futura-Medium,  CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	position: fixed;
+	font-size: 12px;
+	padding-top: 20px;
+	text-align: center;
 	position: relative;
 	height: 10%;
 	width: 100%;
@@ -102,12 +108,18 @@ footer {
 	font-family: Oswald, Futura, Futura-Medium,  CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
 	position: fixed;
 	padding: 4px;
+	padding-left: 20px;
 	word-spacing: 60px;
 	font-size: 11px;
 	width: 100%;
 	bottom: 0%;
 	text-align: left;
 	opacity: .85;
+}
+.footer_image{
+	position: relative;
+	width: 16px;
+	top: 3px;
 }
 
 /*---------------------ZINE-----------------------------*/
