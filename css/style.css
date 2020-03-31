@@ -65,23 +65,23 @@ h1 {
     color: white;
     background: #333;;
 }
-#headshot {
+#home {
 	display: block;
 	width: 150%;
-	top: 15%;
+	top: 20%;
 	right: 50%;
 	position: relative;
 
 }
 .text {
 	position: absolute;
-	top: 38%;
+	top: 42%;
 	left: 10%;
 	color: red;
 	font-family:  "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, Futura-Medium, "Futura Medium",sans-serif;
-	font-size: .7em;
+	font-size: .8em;
 	opacity: .75;
-	width: 28%;
+	width: 25%;
 	text-align: left;
 	text-decoration: none;
 	word-spacing: 10px;
@@ -99,7 +99,7 @@ h1 {
 	position: relative;
 	height: 10%;
 	width: 100%;
-	top: 70%;
+	top: 40%;
 	opacity: .55;
 }	
 footer {
@@ -107,7 +107,7 @@ footer {
 	background: #333;
 	font-family: Oswald, Futura, Futura-Medium,  CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
 	position: fixed;
-	padding: 4px;
+	padding: 6px;
 	padding-left: 20px;
 	word-spacing: 60px;
 	font-size: 11px;
@@ -118,8 +118,9 @@ footer {
 }
 .footer_image{
 	position: relative;
-	width: 16px;
-	top: 3px;
+	width: 20px;
+	top: 2px;
+	left: 20%;
 }
 
 /*---------------------ZINE-----------------------------*/
@@ -140,13 +141,12 @@ footer {
 	text-align: center;
 }
 
-/*----------------------PHOTOGRAPHY-------------------------*/
+/*----------------------PHOTOGRAPHS-------------------------*/
 .gallery{
 	width: 100%;
 	position: relative;
 	text-align: center;
 	top: 20%;
-	margin-bottom: 30%;
 	}
 .album{
 	width: 100%;
