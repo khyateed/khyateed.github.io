@@ -32,7 +32,9 @@ $category.on('click', function(){
 	$contents.slideUp();
 	$category.css("background", "#e2e2e2");
 	$category.css("color", "#333");
-	$container_stuff.slideUp()
+	$container_img.css("-webkit-filter", "brightness(100%)");
+	$caption.hide();
+	$container_stuff.slideUp();
 	if(!$currentCategoryContent.is(":visible"))
 		{
 			$currentCategoryContent.slideDown();
