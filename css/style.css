@@ -99,7 +99,7 @@ h1 {
 	position: relative;
 	height: 10%;
 	width: 100%;
-	top: 40%;
+	top: 45%;
 	opacity: .55;
 }	
 footer {
@@ -171,7 +171,7 @@ footer {
 	width: 70%;
 }
 
-.title {
+.category {
 	padding: 5px;
 	background: #e2e2e2;
 	margin-bottom: 10px;
@@ -180,7 +180,7 @@ footer {
 	font-size: 1.5em;
 	text-align: center;
 }
-.title:hover{
+.category:hover{
 	background: green;
 	color: white;
 }
@@ -188,33 +188,18 @@ footer {
 .content{
 	position: relative;
 	width: 130%;
-	right: 15%;
+	right: 16%;
 /*	display: none;*/
 }	
 .container{
-	width: 15%;
+	width: 20%;
 	position: relative;	
 	display: inline-block;
 	margin: 3%;
 }
-.container_stuff{
-	width: 100%;
-	position: relative;
-	margin-top: 10%;
-	margin-bottom: 10%;
-	display: none;
-	font-size: .7em;
-	font-family:  "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, Futura-Medium, "Futura Medium",sans-serif;
-}	
-.container_stuff_images{
-	position: relative;
-
-}
-
-.screen_grab{
+.container img{
 	width: 100%;
 }
-
 .caption{
 	width: 100%;
 	position: absolute;
@@ -224,7 +209,52 @@ footer {
 	top: 10%;
 	color: white;
 	display:none;
+}
 
+.container_stuff{
+	width: 110%;
+	right: 5.5%;
+	position: relative;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	display: none;
+	font-size: 1em;
+	font-family:  "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, Futura-Medium, "Futura Medium",sans-serif;
+}	
+.document{
+	font-family: Oswald, Futura, CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	font-weight: 100;
+	font-size: 1.2em;
+	display: inline-block;
+	width: 30%;
+	margin: 5%;
+	margin-bottom: 5%;
+}
+.document img{
+	width: 100%;
+}
+.document a:hover{
+	-webkit-filter: brightness(80%);
+}
+.poster{
+	font-family: Lobster, LowCasatLight_PERSONAL_USE, Futura;
+	font-weight: 100;
+	font-size: 3em;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	margin: 5%;
+	width: 80%;
+}
+.poster p{
+	font-family: Oswald, Futura, CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	font-size: .6em;
+}
+.poster img{
+	width: 100%;
+}
+.poster a:hover{
+	-webkit-filter: brightness(80%);
 }
 
 /*-------------------------------------------------*/

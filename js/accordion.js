@@ -1,41 +1,43 @@
-var $title = $('.title');
+var $category = $('.category');
 var $contents = $('.content');
 var $container = $('.container');
 var $container_stuff = $('.container_stuff');
+var $container_img = $container.find('img');
+var $caption = $('.caption');
 
 
-// changes title background color on hover
-$title.on('mouseover', function(){
-	var $currentTitle = $(this);
+// changes category background color on hover
+$category.on('mouseover', function(){
+	var $currentCategory = $(this);
 
-	$currentTitle.css("background", "#333");
-	$currentTitle.css("color", "white");
+	$currentCategory.css("background", "#333");
+	$currentCategory.css("color", "white");
 });
 
 
-$title.on('mouseout', function(){
-	var $currentTitle = $(this);
-	$currentTitle.css("background", "#e2e2e2");
-	$currentTitle.css("color", "#333");
+$category.on('mouseout', function(){
+	var $currentCategory = $(this);
+	$currentCategory.css("background", "#e2e2e2");
+	$currentCategory.css("color", "#333");
 });
 
 
-// expands titles to show containers
+// expands Categories to show containers
 $contents.slideUp();
-$title.on('click', function(){
+$category.on('click', function(){
 	
-	var $currentTitle = $(this);
-	var $currentTitleContent = $currentTitle.next();
+	var $currentCategory = $(this);
+	var $currentCategoryContent = $currentCategory.next();
 
 	$contents.slideUp();
-	$title.css("background", "#e2e2e2");
-	$title.css("color", "#333");
+	$category.css("background", "#e2e2e2");
+	$category.css("color", "#333");
 	$container_stuff.slideUp()
-	if(!$currentTitleContent.is(":visible"))
+	if(!$currentCategoryContent.is(":visible"))
 		{
-			$currentTitleContent.slideDown();
-			$currentTitle.css("background", "#333");
-			$currentTitle.css("color", "white");
+			$currentCategoryContent.slideDown();
+			$currentCategory.css("background", "#333");
+			$currentCategory.css("color", "white");
 		}
 });
 
@@ -53,18 +55,34 @@ $container.on('mouseout', function(){
 	var $currentContainer = $(this);
 	var $currentCaption = $currentContainer.find('div')
 	var $currentImg = $currentContainer.find('img');
-	$currentImg.css("-webkit-filter", "brightness(100%)");
-	$currentCaption.hide();
+	var $currentContainerStuff = $currentContainer.next().next().next();
+
+	if(!$currentContainerStuff.is(":visible"))
+	{	
+		$currentImg.css("-webkit-filter", "brightness(100%)");
+		$currentCaption.hide();
+
+		}
+
 });
 
 // expands more contents of each container when clicked
 $container.on('click', function(){
 	var $currentContainer = $(this);
 	var $currentContainerStuff = $currentContainer.next().next().next();
+	var $currentCaption = $currentContainer.find('div');
+	var $currentImg = $currentContainer.find('img');
 
-	$container_stuff.slideUp();
+
+		$container_img.css("-webkit-filter", "brightness(100%)");
+		$caption.hide();
+		$container_stuff.slideUp();
+
 	if(!$currentContainerStuff.is(":visible"))
 		{	
 			$currentContainerStuff.slideDown();
+			$currentImg.css("-webkit-filter", "brightness(50%)");
+			$currentCaption.show();
 		}
+
 });

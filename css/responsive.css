@@ -33,7 +33,7 @@
 		line-height: 1.5;
 	}
 	.bottom{
-		top: 30%;
+		top: 28%;
 	}
 	.footer_image{
 	position: relative;
@@ -59,6 +59,7 @@
 		position: relative;
 		margin-bottom: 40%;
 	}	
+
 	.description{
 		top: 5%;
 	}
@@ -120,6 +121,9 @@
 		left: 37%;
 		top: 0%;
 		margin-bottom: 10%
+	}
+	.container_stuff{
+		right: 25%;
 	}
 	.description{
 		width: 70%;
