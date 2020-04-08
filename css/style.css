@@ -215,20 +215,20 @@ footer {
 	width: 110%;
 	right: 5.5%;
 	position: relative;
-	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 	display: none;
 	font-size: 1em;
 	font-family:  "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, Futura-Medium, "Futura Medium",sans-serif;
 }	
 .document{
-	font-family: Oswald, Futura, CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	font-family: Lobster, LowCasatLight_PERSONAL_USE, Futura;
 	font-weight: 100;
-	font-size: 1.2em;
+	font-size: 2em;
 	display: inline-block;
+	position: relative;
 	width: 30%;
-	margin: 5%;
-	margin-bottom: 5%;
+	margin: 3%;
 }
 .document img{
 	width: 100%;
@@ -241,14 +241,14 @@ footer {
 	font-weight: 100;
 	font-size: 3em;
 	position: relative;
-	text-align: center;
 	display: inline-block;
-	margin: 5%;
+	margin: 3%;
 	width: 80%;
 }
 .poster p{
 	font-family: Oswald, Futura, CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
-	font-size: .6em;
+	font-size: .5em;
+	position: relative;
 }
 .poster img{
 	width: 100%;
