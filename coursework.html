@@ -28,37 +28,43 @@
       <div class = 'category'>
         Amazon Web Services
       </div>
-      <div class = 'container_stuff'>
+      <div class = 'content'>
 
           <div class = 'poster'>Caption Crunch
-            <p>Caption Crunch is a serverless mobile application that allows users to upload an image and recieve a relevant song lyric to post on social media.</p>
-          </div>
-          <div class = 'document'>React Native Application<br>
-            <img title ="React Native Application" src ="pics/app.gif" alt=''>
-          </div>
-          <div class = 'poster'>
               <img title ="Architecture Diagram" src ="pics/architecture.png" alt=''>
+              <p>Caption Crunch is a serverless mobile application that allows users to upload an image and recieve a relevant song lyric to post on social media.</p>
+              <p>
+          </div>
+          <div class = 'gutter'>React Native Application<br>
+            <img title ="React Native Application" src ="pics/app.gif" alt='' loop=infinite>
           </div>
           <div class = 'poster'>
               <img title ="Refresh Token" src ="pics/refreshToken.png" alt=''>
+              <p>When a user clicks the Sign Up button, the getLyrics Lambda function is triggered through API Gateway. The first function of getLyrics is to authenticate into the user's Spotify account.</p>
           </div>
           <div class = 'poster'>
               <img title ="Get Top Artists" src ="pics/getArtists.png" alt=''>
+              <p>Next, getLyrics retrieves a list of the user's Top 10 Spotify Artists.</p>
           </div>
           <div class = 'poster'>
               <img title ="Get Top Tracks" src ="pics/getTracks.png" alt=''>
+              <p>Each of these artist names is then sent in a request to MusixMatch, which is a massive online database of song lyrics with a developers API endpoint.<br><br>From MusixMatch, the function can iteratively retrieve each Track Name, of each Album, of each of the user's Top 10 Artists. Finally, each Track Name is passed through MusixMatch to retrieve a massive set of song lyrics.</p>
           </div>
           <div class = 'poster'>
               <img title ="Amazon Comprehend" src ="pics/comprehend.png" alt=''>
+              <p>Next, each set of lyrics is sent through Amazon Comprehend, which is used for different types of NLP. For this use case, Comprehend retrieves a set of Key Words from the song lyrics, based on frequency and figure of speech.<br>These Key Words are stored along side the full lyrics in a key:value format within the Amazon ElasticSearch Service.
           </div>
           <div class = 'poster'>
               <img title ="Amazon Rekognition" src ="pics/rekognition.png" alt=''>
+              <p>When a user selects Upload on the mobile application, they can take/upload a picture which is stored in an S3 bucket.<br>This action also sends the picture to Amazon Rekognition, which returns a list of Image Tags (objects, people, text, and scenery detected in the image alongside a confidence interval.)
           </div>
           <div class = 'poster'>
               <img title ="Amazon Elasticsearch Service" src ="pics/elasticsearch1.png" alt=''>
+              <p>Elasticsearch is used to tie everything together. The services searches the repository of Song Lyrics/Key Words to find the closest match to the image based on its Image Tags.</p>
           </div>
           <div class = 'poster'>
               <img title ="Amazon Elasticsearch Service" src ="pics/elasticsearch2.png" alt=''>
+              <p>Finally, the an excerpt of the song lyrics is returned to the user interface, where it can be used as a caption on the user's social media posts.</p>
           </div>
       </div>
 <!-- UX WORK -->
@@ -136,13 +142,13 @@
          
           <div class ='container'>
             <a  href = "files/dems_vs_reps_twitter.zip" target = "_blank">
-              <img class = 'full_size_img' title = "Twitter API and Webscraping Mashup Project" src = "pics/dems_vs_reps_twitter_pic.png" alt='screengrab'>
+              <img title = "Twitter API and Webscraping Mashup Project" src = "pics/dems_vs_reps_twitter_pic.png" alt='screengrab'>
               <div class='caption'>placeholder</div>
             </a>
         </div>
           <div class ='container'>
             <a  href = "files/iceclimbers_game.zip" target = "_blank">
-              <img class = 'full_size_img' title = "Ice Climbers PyGame" src = "pics/iceclimbers_game_pic.png" alt='screengrab'>
+              <img  title = "Ice Climbers PyGame" src = "pics/iceclimbers_game_pic.png" alt='screengrab'>
               <div class='caption'>also placeholder</div>
             </a>
         </div>
@@ -153,7 +159,7 @@
 <script type = 'text/javascript' src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script type='text/javascript' src = 'js/accordion.js'></script>
 
-<div class= 'bottom'>JANUARY 2020</div>
+<div class= 'bottom'>APRIL 2020</div>
 <footer>
   <a href = "https://www.instagram.com/hasbroyahtzee/" target = "_blank"><img class="footer_image" src ="pics/instagram.png" alt='Instagram'></a>
   <a href = "https://www.linkedin.com/in/khyateed/" target = "_blank"><img class="footer_image" src ="pics/linkedin.png" alt='LinkedIn'></a>

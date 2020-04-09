@@ -39,6 +39,7 @@ h1 {
 
 .nav li {
     display: block;
+    background: white;
 
 }
 .nav li a {
@@ -187,8 +188,8 @@ footer {
 
 .content{
 	position: relative;
-	width: 130%;
-	right: 16%;
+	width: 120%;
+	right: 11%;
 /*	display: none;*/
 }	
 .container{
@@ -220,6 +221,21 @@ footer {
 	display: none;
 	font-size: 1em;
 	font-family:  "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, Futura-Medium, "Futura Medium",sans-serif;
+}
+.gutter{
+	font-family: Oswald, Futura, CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	font-weight: 100;
+	font-size: 1.6em;
+	display: inline-block;
+	position: fixed;
+	width: 17%;
+	left: 5%;
+	bottom: 10%;
+	margin: 3%;
+
+}
+.gutter img{
+	width: 100%;
 }	
 .document{
 	font-family: Lobster, LowCasatLight_PERSONAL_USE, Futura;
@@ -237,17 +253,18 @@ footer {
 	-webkit-filter: brightness(80%);
 }
 .poster{
-	font-family: Lobster, LowCasatLight_PERSONAL_USE, Futura;
-	font-weight: 100;
-	font-size: 3em;
+	font-family: Oswald, Futura, CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	font-size: 2.5em;
 	position: relative;
 	display: inline-block;
-	margin: 3%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 	width: 80%;
 }
 .poster p{
-	font-family: Oswald, Futura, CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	font-family: "Avenir", "Avant Garde", Futura, Futura-Medium, "Futura Medium",sans-serif;
 	font-size: .5em;
+	text-align: left;
 	position: relative;
 }
 .poster img{

@@ -58,7 +58,41 @@
 		top: 10%;
 		position: relative;
 		margin-bottom: 40%;
+	}
+	.caption{
+		width: 60%;
+		position: absolute;
+		font-family: Oswald, Futura, CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+		font-weight: 100;
+		text-align: center;
+		top: 15%;
+		left: 19%;
+		font-size: 1em;
+		color: white;
+		display:none;
 	}	
+	.gutter{
+		position: relative;
+		display: inline-block;
+		margin-top: 3%;
+		left: 0%;
+		width: 40%;
+		font-size: 1.5em;
+	}
+	.poster{
+		font-size: 2em;
+		width: 100%;
+		margin-top: 3%;
+		margin-bottom: 3%;
+		position: relative;
+		display: inline-block;
+	}
+	.poster p{
+		font-size: .5em;
+	}
+	.document{
+		font-size: 1.5em;
+	}
 
 	.description{
 		top: 5%;
@@ -115,24 +149,108 @@
 		right: 20%;
 		top: -10%;
 	}
+/*-----ACCORDION------*/
 
-	.accordion{
-		width: 60%;
-		left: 37%;
-		top: 0%;
-		margin-bottom: 10%
-	}
-	.container_stuff{
-		right: 25%;
-	}
-	.description{
-		width: 70%;
-		left: 30%;
-		top: 0%;
-	}
-	.zine{
-		margin-bottom: 10%;
-	}
+
+.category {
+	padding: 5px;
+	background: #e2e2e2;
+	margin-bottom: 10px;
+	font-family: Lobster, LowCasatLight_PERSONAL_USE, Futura;
+	color: #333;
+	font-size: 1.5em;
+	text-align: center;
+}
+.category:hover{
+	background: green;
+	color: white;
+}
+
+
+.container{
+	width: 15%;
+	position: relative;	
+	display: inline-block;
+	margin: 3%;
+}
+.container img{
+	width: 100%;
+}
+.caption{
+	font-size: 1.2em;
+}
+
+.gutter{
+	font-family: Oswald, Futura, CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	font-weight: 100;
+	font-size: 1.6em;
+	display: inline-block;
+	position: fixed;
+	width: 17%;
+	left: 5%;
+	bottom: 10%;
+	margin: 3%;
+}
+.gutter img{
+	width: 100%;
+}	
+.document{
+	font-family: Lobster, LowCasatLight_PERSONAL_USE, Futura;
+	font-weight: 100;
+	font-size: 2em;
+	display: inline-block;
+	position: relative;
+	width: 30%;
+	margin: 3%;
+}
+.document img{
+	width: 100%;
+}
+.document a:hover{
+	-webkit-filter: brightness(80%);
+}
+.poster{
+	font-family: Oswald, Futura, CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	font-size: 2.5em;
+
+	width: 80%;
+}
+.poster p{
+	font-family: "Avenir", "Avant Garde", Futura, Futura-Medium, "Futura Medium",sans-serif;
+	font-size: .4em;
+	text-align: left;
+	position: relative;
+}
+.poster img{
+	width: 100%;
+}
+.poster a:hover{
+	-webkit-filter: brightness(80%);
+}
+.accordion{
+	width: 60%;
+	left: 37%;
+	top: 0%;
+	margin-bottom: 10%
+}
+.content{
+	position: relative;
+	width: 120%;
+	left: -10%;
+}
+.container_stuff{
+	right: 25%;
+}
+
+
+.description{
+	width: 70%;
+	left: 30%;
+	top: 0%;
+}
+.zine{
+	margin-bottom: 10%;
+}
 
 
 
