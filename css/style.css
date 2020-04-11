@@ -40,7 +40,7 @@ h1 {
 .nav li {
     display: block;
     background: white;
-    
+
 
 }
 .nav li a {
@@ -82,7 +82,6 @@ h1 {
 	color: red;
 	font-family:  "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, Futura-Medium, "Futura Medium",sans-serif;
 	font-size: .8em;
-	opacity: .75;
 	width: 25%;
 	text-align: left;
 	text-decoration: none;

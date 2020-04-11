@@ -109,7 +109,7 @@
 		right: 5%;
 		padding-top:2%;
 		position: absolute;
-		width: 40%
+		width: 50%
 	}
 	.nav{
 
@@ -142,7 +142,7 @@
 	#home {
 		width: 120%;
 		right: 20%;
-		top: -10%;
+		top: -8%;
 	}
 /*-----ACCORDION------*/
 .accordion{
@@ -178,8 +178,8 @@
 	display: inline-block;
 	position: fixed;
 	width: 17%;
-	left: 3%;
-	bottom: 10%;
+	left: 3.5%;
+	bottom: 2%;
 	margin: 3%;
 }
 
