@@ -67,18 +67,19 @@
 	}
 	.caption{
 		width: 60%;
-		top: 15%;
+		top: 10%;
 		left: 19%;
-		font-size: 1em;
+		font-size: 1.1em;
 	}	
 	.content{
 		position: relative;
-		width: 120%;
-		right: 10%;
+		width: 130%;
+		right: 15%;
 	}
 
 	.poster{
 		font-size: 2em;
+		width: 90%;
 	}
 	.poster p{
 		font-size: .5em;
@@ -87,7 +88,7 @@
 		font-size: 1.5em;
 	}
 	.gutter{
-		width: 40%;
+		width: 30%;
 		font-size: 2.2em;
 	}
 
@@ -174,10 +175,10 @@
 }
 
 .gutter{
-	font-size: 2.2em;
+	font-size: 2.3em;
 	display: inline-block;
 	position: fixed;
-	width: 17%;
+	width: 18%;
 	left: 3.5%;
 	bottom: 2%;
 	margin: 3%;
@@ -186,17 +187,19 @@
 .gutter img{
 	width: 100%;
 }	
+.gutter p {
+	margin-top: 5%;
+}
 .document{
 	font-size: 2em;
 }
 
 .poster{
-	font-size: 2.5em;
-	width: 90%;
+	font-size: 2.4em;
 	margin-bottom: 3%;
 }
 .poster p{
-	font-size: .4em;
+	font-size: .5em;
 	margin:0;
 }
 

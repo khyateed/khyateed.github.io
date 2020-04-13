@@ -30,11 +30,10 @@
       <div class = 'content'>
           <div class = 'poster'>Caption Crunch
               <img title ="Architecture Diagram" src ="pics/architecture.png" alt=''>
-              <p>Caption Crunch is a serverless application that allows users to upload an image and recieve a relevant song lyric to post on social media.</p>
+              <p>Caption Crunch is a serverless application that uses image recognition and NLP to output a relevant song lyric based on an image uploaded by the user.</p>
           </div>
           <div class = 'gutter'>
             <img title ="React Native Application" src ="pics/app.gif" alt='' loop=infinite>
-            <p>React Native Application</p>
           </div>
           
           <div class = 'poster'>
@@ -88,12 +87,15 @@
         </div>
 <!-- TINDER -->
         <div class ='container_stuff'style="background:#df4723;">
+          <div class = 'gutter'>Usability Testing of Tinder<br>
+                  <p>Heuristic Evaluation, Competitive Analysis, and Interviews, Personas, & Scenarios</p>
+                </div>
             <div class = 'document'>Heuristic Evaluation
                 <a href ="files/heuristic.docx" target= "_blank">
                   <img title ="Heuristic Evaluation" src ="pics/heuristic.png" alt=''>
                 </a>
             </div>
-            <div class = 'document'>Competitive Research
+            <div class = 'document'>Competitive Analysis
                 <a href ="files/competitive.docx" target= "_blank">
                   <img title ="Competitive Research" src ="pics/competitive.png" alt=''>
                 </a>
@@ -108,7 +110,7 @@
 <!-- DECOLONIZE DAILY -->
 
         <div class ='container_stuff'>
-          <div class = 'gutter'>Decolonize Daily<br><br>
+          <div class = 'gutter'>Decolonize Daily<br>
             <p>“Take action on a daily basis in line with longstanding movements for social justice and collective liberation”<br></p>
           </div>
           <div class = 'poster'>
@@ -129,31 +131,87 @@
         </div>
       </div>
 
-<!--------------- CODING WORK --------------->
+<!--------------------- CODING WORK ------------------->
       <div class = 'category'>
-          Coding Work
+          Data Science Work
       </div>
       <div class = 'content'>
           <div class ='container'>
               <img title = "Twitter API and Webscraping Mashup Project" src = "pics/twitter.png" alt=''>
-              <div class='caption'>Data Manipulation Project</div>
+              <div class='caption'>Data Analysis Project</div>
           </div>
           <div class ='container'>
-              <img  title = "Ice Climbers PyGame" src = "pics/iceclimbers_game_pic.png" alt=''>
-              <div class='caption'>also placeholder</div>
+              <img  title = "Log File Reader" src = "pics/sqlite.png" alt=''>
+              <div style = " width: 40%; text-align: left;" class='caption'>Log Reader Script</div>
           </div>
           <div class ='container'>
               <img  title = "Spotify Listening Patterns" src = "pics/spotify.png" alt=''>
-              <div class='caption'>wow another placeholder</div>
+              <div class='caption'>Coming Soon</div>
           </div>
+          
+          
 
 <!-- TWITTER API PROJECT -->
           <div class ='container_stuff'style="background:#00acee;">
-                <div class = 'poster'>Twitter API Mashup Project<br><br>
-                      <p>This script allows the user to input a keyword and uses the Twitter API and Natural Language Processing to return the frequency that the word appeared in tweets of Democratic and Republican senators.<br><br>
-                      <img title ="Democatratic vs Republican Tweets" src ="pics/tweet_graph.png" alt=''>
-                    </a>
+                <div class = 'gutter'>What are US Senators Tweeting About?<br>
+                  <p>Data Analysis using web-scraping, Twitter API requests, and NLP</p>
                 </div>
+                <div class = 'poster'>
+                  <img title ="Democatratic vs Republican Tweets" src ="pics/tweet_graph.png" alt=''>
+                  <p>This script allows the user to input a keyword and uses the Twitter API and Natural Language Processing to return the frequency that the word appeared in tweets of Democratic and Republican senators.</p>
+                </div>
+                <div class = 'poster'>Data Sources
+                  <img title ="Ballotpedia" src ="pics/ballotpedia.png" alt=''>
+                  <p>1. an HTML response from <a href="https://ballotpedia.org/List_of_current_members_of_the_U.S._Congress">Ballotpedia.org</a>, with the names of all current US senators<br>2. a JSON response from the <a href="https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets">Twitter Search API</a> with the tweets and metadata from US senators.</p>
+                </div>
+                <div class = 'poster'>Step 1: Web-Scraping
+                  <img title ="Step 1: Scrape" src ="pics/twitterStep1.png" alt=''>
+                  <p>In Step 1, an HTML response is retrieved from ballotpedia.org using the requests module. This response is then cached into “step1.html.” Next, BeautifulSoup is used to parse through the HTML and retrieve a list of tuples (the output of this step.) Each tuple contains the name of a current senator, and the name of their political party affiliation (i.e. (Bernie Sanders, Democratic).)</p>
+                </div>
+                <div class = 'poster'>Step 2: Party Affiliation
+                  <img title ="Step 2: Party Affiliation" src ="pics/twitterStep2.png" alt=''>
+                  <p>In Step 2, the list of tuples is parsed using Regular Expressions to create two separate lists of senator names—one for Democrats, and one for Republicans. These lists are called “dems” and “repubs” respectively.</p>
+                </div>
+                <div class = 'poster'>Step 3: Twitter Handles
+                  <img title ="Step 3: Twitter Handles" src ="pics/twitterStep3.png" alt=''>
+                  <p>Step 3 makes a request to the Twitter Search API for each name in the above two lists of senators. Then the JSON response is parsed to retrieve a twitter handle for each senator, which is then written to one of two text files (‘dem_handles.txt’ and ‘repub_handles.txt,’) delimited by commas.</p>
+                </div>
+                <div class = 'poster'>Step 4: Get Tweets
+                  <img title ="Step 4: Get Tweets" src ="pics/twitterStep4.png" alt=''>
+                  <p>In Step 4, each of the cached twitter handles is sent through another Twitter Search API request, to retrieve each senator’s most recent 100 tweets. These tweets are saved to the text files ‘dem_tweets.txt’ and ‘repub_tweets.txt’. The files are then split into two lists using the split() function. Each of the two lists contains all of the tweets retrieved from either the Republican or Democratic senators. The two lists are ‘all_repub_tweets’ and ‘all_dem_tweets.’</p>
+                </div>
+                <div class = 'poster'>Step 5: Keywords
+                  <img title ="Step 5: Keywords" src ="pics/twitterStep5.png" alt=''>
+                  <p>Step 5 of the program asks the user to input a keyword that they would like to search. The lists of democrat and republican tweets are then searched for the keyword, and a count frequency is recorded for each. Then the keyword, the count frequency for the democrat tweets, and the count frequency for the republican tweets are recorded in a dictionary. This dictionary is appended to a list (lod) and the loop is repeated for another keyword, until the user hits “q.”</p>
+                  <img title ="Tweet Counts" src ="pics/tweetCountOutput.png" alt='' style="width: 60%; margin-top:4%;">
+                </div>
+                <div class = 'poster'>Step 6: Plotting
+                  <img title ="Step 6: Keywords" src ="pics/twitterStep6.png" alt=''>
+                  <p>Finally, Step 6 of the program creates a pandas data frame from the list of dictionaries (lod.) This object is then used to make a text-based plot using ggplot. The plot contains # Democrat Tweets on the X axis, and Republican Tweets on the Y axis. Each data point is represented by the text of the keyword that was searched, making the plot easy to understand and analyze.</p><br>
+                  <img title ="Democatratic vs Republican Tweets" src ="pics/tweet_graph.png" alt=''>
+                </div>
+          </div>
+
+          <div class = "container_stuff">
+              <div class = 'gutter'>Log File Reader<br>
+                  <p>Reading raw .dat log files into a SQLite database</p>
+              </div>
+              <div class = 'poster'>Create Databases
+                  <img title ="Create DB" src ="pics/createDB.png" alt=''>
+                  <p>First, the script creates a sqlite database and creates 5 tables based on the 5 types of log files that will be inserted.</p>
+              </div>
+              <div class = 'poster'>Create Dictionaries
+                  <img title ="Create Dictionaries" src ="pics/readerMain.png" alt=''>
+                  <p>Next, the main function parses through each line of the raw log file and send it to the appropriate function based on the 5 types of table created. These functions (ie. access() or transfer()) convert the raw log into a python dictionary.</p>
+              </div>
+              <div class = 'poster'>Write to Dictionaries
+                  <img title ="Write to Dictionaries" src ="pics/accessFunction.png" alt=''>
+                  <p>From within these functions, the raw logs are passed through a series of Try/Except statements to write appropriate attributes to the dictionary. The dictionary is then returned to the main function.</p>
+              </div>
+              <div class = 'poster'>Insert into Database
+                  <img title ="Insert into DB" src ="pics/insertDB.png" alt=''>
+                  <p>Finally, the main function inserts the dictionary into the appropriate table in the database. This occurs iteratively for each raw log, and at the end the changes are commited to the DB.</p>
+              </div>
           </div>
       </div>
 </div>

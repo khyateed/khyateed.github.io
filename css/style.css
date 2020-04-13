@@ -226,15 +226,15 @@ footer {
 	font-family: Lobster, LowCasatLight_PERSONAL_USE, Futura;
 	position: relative;
 	display: inline-block;
-	margin: 5% 0 8% 0;
-	width: 50%;
-	font-size: 1.8em;
+	margin: 5% 0 5% 0;
+	width: 40%;
+	font-size: 1.9em;
 }
 .gutter img{
 	width: 100%;
 }	
 .gutter p {
-	font-size: .8em;
+	font-size: .7em;
 	position: relative;
 	width: 150%;
 	right: 25%;
@@ -261,7 +261,7 @@ footer {
 	position: relative;
 	display: inline-block;
 	margin-top: 5%;
-	margin-bottom: 8%;
+	margin-bottom: 5%;
 	width: 100%;
 }
 .poster p{
