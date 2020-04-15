@@ -18,7 +18,7 @@
   <li><a  href="index.html">HOME</a></li>
   <li><a href="files/khyatee_resume2020.pdf" target="_blank">RESUME</a></li>
   <li><a href="photo.html">PHOTOGRAPHS</a></li>
-  <li><a class="current_page" href="coursework.html">PROJECTS</a></li>
+  <li><a class="current_page" href="projects.html">PROJECTS</a></li>
 </ul>
 
 
@@ -76,7 +76,7 @@
             </a>
         </div>
         <div class ='container'>
-              <img title ="Decolonize Daily Mobile Application" src ="pics/decolonize.jpeg" alt='Decolonize Daily Icon'>
+              <img title ="Decolonize Daily Mobile Application" src ="pics/decolonize.jpeg" alt='Decolonize Daily Icon'style="border-radius: 20px;">
               <div class='caption'>Senior Design Project</div>
             </a>
         </div>
@@ -132,27 +132,27 @@
       </div>
 
 <!--------------------- CODING WORK ------------------->
-      <div class = 'category'>
-          Data Science Work
-      </div>
+  <div class = 'category'>
+    Data Science Work
+  </div>
       <div class = 'content'>
           <div class ='container'>
               <img title = "Twitter API and Webscraping Mashup Project" src = "pics/twitter.png" alt=''>
               <div class='caption'>Data Analysis Project</div>
           </div>
           <div class ='container'>
-              <img  title = "Log File Reader" src = "pics/sqlite.png" alt=''>
-              <div style = " width: 40%; text-align: left;" class='caption'>Log Reader Script</div>
+              <img  title = "Log File Reader" src = "pics/sqlite.png" alt='' >
+              <div style = " width: 45%; text-align: left;" class='caption'>Log Reader Script</div>
           </div>
           <div class ='container'>
-              <img  title = "Spotify Listening Patterns" src = "pics/spotify.png" alt=''>
-              <div class='caption'>Coming Soon</div>
+              <img  title = "NYC Covid Cases" src = "pics/corona.png" alt='' style="border-radius: 20px; width: 95%;">
+              <div class='caption'>NYC Covid Cases</div>
           </div>
           
           
 
 <!-- TWITTER API PROJECT -->
-          <div class ='container_stuff'style="background:#00acee;">
+          <div class ='container_stuff'style="background:#40c4ff;">
                 <div class = 'gutter'>What are US Senators Tweeting About?<br>
                   <p>Data Analysis using web-scraping, Twitter API requests, and NLP</p>
                 </div>
@@ -191,27 +191,42 @@
                   <img title ="Democatratic vs Republican Tweets" src ="pics/tweet_graph.png" alt=''>
                 </div>
           </div>
-
+<!-- SQLite Log Reader -->
           <div class = "container_stuff">
               <div class = 'gutter'>Log File Reader<br>
                   <p>Reading raw .dat log files into a SQLite database</p>
               </div>
-              <div class = 'poster'>Create Databases
+              <div class = 'poster'>Step 1: Create Databases
                   <img title ="Create DB" src ="pics/createDB.png" alt=''>
                   <p>First, the script creates a sqlite database and creates 5 tables based on the 5 types of log files that will be inserted.</p>
               </div>
-              <div class = 'poster'>Create Dictionaries
+              <div class = 'poster'>Step 2: Create Dictionaries
                   <img title ="Create Dictionaries" src ="pics/readerMain.png" alt=''>
                   <p>Next, the main function parses through each line of the raw log file and send it to the appropriate function based on the 5 types of table created. These functions (ie. access() or transfer()) convert the raw log into a python dictionary.</p>
               </div>
-              <div class = 'poster'>Write to Dictionaries
+              <div class = 'poster'>Step 3: Write to Dictionaries
                   <img title ="Write to Dictionaries" src ="pics/accessFunction.png" alt=''>
                   <p>From within these functions, the raw logs are passed through a series of Try/Except statements to write appropriate attributes to the dictionary. The dictionary is then returned to the main function.</p>
               </div>
-              <div class = 'poster'>Insert into Database
+              <div class = 'poster'>Step 4: Insert into Database
                   <img title ="Insert into DB" src ="pics/insertDB.png" alt=''>
                   <p>Finally, the main function inserts the dictionary into the appropriate table in the database. This occurs iteratively for each raw log, and at the end the changes are commited to the DB.</p>
               </div>
+          </div>
+<!-- NYC Covid Cases -->
+          <div class = "container_stuff" style ='background:#FFEEEC;'>
+            <div class = 'gutter'>Coronavirus Testing Across NYC
+              <p>Using Pandas, BeautifulSoup, and GeoPandas to Analyze NYC Covid19 Data</p>
+            </div>
+            <div class = 'poster'>
+              <img title = "Percent of People Tested" src = "pics/percentTested.png" alt='Percent of People Tested'>
+              <p>This project uses data manipulation & visualization tools to look at the disparities in Coronavirus testing across New York City.</p>
+            </div>
+            <div class = 'poster'>Data Sources
+                <p><a href="http://www.usa.com/rank/new-york-northern-new-jersey-long-island-ny-nj-pa-area--population-density--zip-code-rank.htm?yr=9000&dis=&wist=&plow=&phigh=">1. Population by NYC Zip Code</a><br><a href="https://github.com/nychealth/coronavirus-data">2. Covid Testing Data by NYC Zip Code</a><br><a href = "https://data.beta.nyc/dataset/nyc-zip-code-tabulation-areas">3. NYC Zip Codes Shapefile</a></p>
+            </div>
+            <div class = 'poster'>To be continued.
+            </div>
           </div>
       </div>
 </div>
