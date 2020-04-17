@@ -66,9 +66,9 @@
 		margin-bottom: 40%;
 	}
 	.caption{
-		width: 60%;
+		width: 80%;
 		top: 10%;
-		left: 19%;
+		left: 10%;
 		font-size: 1.1em;
 	}	
 	.content{
@@ -171,7 +171,7 @@
 	width: 100%;
 }
 .caption{
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 .gutter{
