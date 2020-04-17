@@ -214,19 +214,39 @@
               </div>
           </div>
 <!-- NYC Covid Cases -->
-          <div class = "container_stuff" style ='background:#FFEEEC;'>
-            <div class = 'gutter'>Coronavirus Testing Across NYC
-              <p>Using Pandas, BeautifulSoup, and GeoPandas to Analyze NYC Covid19 Data</p>
+          <div class = "container_stuff">
+            <div class = 'gutter'>Coronavirus Testing in NYC
+              <p>Using Pandas, BeautifulSoup, and GeoPandas to visualize disparities in Covid19 testing across NYC</p>
             </div>
             <div class = 'poster'>
               <img title = "Percent of People Tested" src = "pics/percentTested.png" alt='Percent of People Tested'>
-              <p>This project uses data manipulation & visualization tools to look at the disparities in Coronavirus testing across New York City.</p>
             </div>
             <div class = 'poster'>Data Sources
-                <p><a href="http://www.usa.com/rank/new-york-northern-new-jersey-long-island-ny-nj-pa-area--population-density--zip-code-rank.htm?yr=9000&dis=&wist=&plow=&phigh=">1. Population by NYC Zip Code</a><br><a href="https://github.com/nychealth/coronavirus-data">2. Covid Testing Data by NYC Zip Code</a><br><a href = "https://data.beta.nyc/dataset/nyc-zip-code-tabulation-areas">3. NYC Zip Codes Shapefile</a></p>
+                <p><a href="http://www.usa.com/rank/new-york-northern-new-jersey-long-island-ny-nj-pa-area--population-density--zip-code-rank.htm?yr=9000&dis=&wist=&plow=&phigh=">1. Population of each NYC Zip Code</a><br><a href="https://github.com/nychealth/coronavirus-data">2. Covid Testing by NYC Zip Code</a><br><a href = "https://data.beta.nyc/dataset/nyc-zip-code-tabulation-areas">3. NYC Zip Codes Shapefile</a></p>
             </div>
-            <div class = 'poster'>To be continued.
+            <div class = 'poster'>Step 1:  Inspect the Data
+              <img title = "Zip Code Data" src = "pics/covidStep1a.png" alt='Zip Code Data'>
+              <p>The first data set is collected by using Beautiful Soup to parse out the html page and create a Pandas dataframe.</p><br><br>
+              <img title = "NYC Testing Data" src = "pics/covidStep1b.png" alt='NYC Testing Data'>
+              <p>The second data is a .csv file of the number of positive Covid19 tests and the total number of tests administered in each NYC zip code, last updated on April 15, 2020.</p>
             </div>
+            <div class = 'poster'>Step 2:  Join the Datesets
+              <img title = "Join the datasets" src = "pics/covidStep2.png" alt='Join the datasets'>
+              <p>The next step is to merge the datasets by zip code, and then add columns for the percent of the population of each zip code tested, and the percent of the population of each zip code that tested positive.</p>
+            </div>
+            <div class = 'poster'>Step 3:  Create a GeoDataFrame
+              <img title = "Create a GeoDataFrame" src = "pics/covidStep3.png" alt='Create a GeoDataFrame'>
+              <p>In order to create a choropleth visualization, the covid dataframe is merged with a shapefile, which contains geospatial vector data for the NYC area. </p>
+            </div>
+            <div class = 'poster'>Step 4:  Choropleth Maps
+              <img title = "Choropleth Maps" src = "pics/covidStep4.png" alt='Choropleth Maps'>
+              <p>The geodataframe is then used to create visualizations, using standard matplotlib convention:</p><br>
+              <img title = "Percent of the Population with Covid19" src = "pics/percentPos.png" alt='Percent of the Population with Covid19'><p></p><br>
+              <img title = "Percent of Population Tested" src = "pics/percentTested.png" alt='Percent of Population Tested'><p></p><br>
+              <img title = "Percent of Tests Positive" src = "pics/percentPosTests.png" alt='Percent of Tests Positive'><p>This was the visualization I found to be most interesting in this project. A map such as this doesn't allow us to draw conclusions, but it does force us to ask ourselves questions that were not immediately apparent just from looking at the data:<br><br>Who gets the priviledge getting tested when they may not have apparent symptoms?<br><br>In which areas are tests more dispensible, and in which areas are they only given to those who are visibly sick?<br><br>What are the differences in race, income, age, etc. that contribute to the testing disparities between these areas?</p>
+            </div>
+            <div class = 'poster'>To Be Continued.
+            </div>s
           </div>
       </div>
 </div>
