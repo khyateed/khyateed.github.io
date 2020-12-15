@@ -18,7 +18,7 @@ h1 {
 	background: white;
 	width: 100%;
 	z-index: 2;
-	color: #333;;
+	color: #333;
 	font-family: Lobster, LowCasatLight_PERSONAL_USE, Rainbow , Futura;
 	text-align: center;
 	font-weight: normal;
@@ -110,7 +110,7 @@ footer {
 	position: fixed;
 	padding: 6px;
 	padding-left: 20px;
-	word-spacing: 80px;
+	word-spacing: 60px;
 	font-size: 11px;
 	width: 100%;
 	bottom: 0%;
@@ -190,6 +190,7 @@ footer {
 	position: relative;
 	width: 142%;
 	right: 22.5%;
+	display: none;
 }	
 .container{
 	width: 18%;

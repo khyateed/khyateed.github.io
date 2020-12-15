@@ -23,7 +23,7 @@ $category.on('mouseout', function(){
 
 
 // expands Categories to show containers
-$contents.slideUp();
+// $contents.slideUp();
 $category.on('click', function(){
 	
 	var $currentCategory = $(this);
